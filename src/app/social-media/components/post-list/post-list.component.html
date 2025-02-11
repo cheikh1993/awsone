@@ -1,0 +1,4 @@
+<div class="main-content">
+    <h2>Les posts</h2>
+<app-post-list-item *ngFor="let post of posts$ | async" [post]="post" (postCommented)="onPostCommented($event)"></app-post-list-item>
+</div>
